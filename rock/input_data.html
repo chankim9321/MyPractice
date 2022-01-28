@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://localhost/login.php"> <!-- 해당 서버에 정보를 전달 -->
+        <p>아이디: <input type="text" name="id"></p> <!-- name 속성은 같은 속성의 문자를 보냈을떄 name 속성을 통해 구별한다. -->
+        <p>비밀번호: <input type="password" name="pwd" ></p>
+        <p>address: 
+            <textarea cols="30" rows="1">default value</textarea> <!-- 텍스트 입력 박스 -->
+        </p>
+        <input type="submit">
+        <input type="button" value="안녕" onclick="alert('hello world!')"> <!-- 버튼 타입 -->
+        <input type="hidden" value="hide-boy" name="hide"> <!-- UI는 없지만 해당 서버로 value 정보를 넘겨주어야 할때 사용. -->
+    </form>
+    <form action="ex-server">
+        <h1>색상(콤보박스)</h1>
+        <select name="color"> <!-- 콤보박스 생성 -->
+            <option value="red">붉은색~</option> <!-- value는 컴퓨터 서버로 전송할 data 값-->
+            <option value="blue">푸른색~</option>
+            <option value="yellow">노란색 빛을 내는~</option>
+        </select>
+        <p><input type="submit"></p>
+        <h1>색상(다중선택) but, 사용성x 대신 체크박스 사용 </h1>
+        <select name="color2" multiple> <!-- multiple 은 속성값x 다중선택 가능 -->
+            <option value="red">붉은색~</option> <!-- value는 컴퓨터 서버로 전송할 data 값-->
+            <option value="blue">푸른색~</option>
+            <option value="yellow">노란색 빛을 내는~</option>
+        </select>
+        <p><input type="submit"></p>
+    </form>
+    <form action="https://localhost/login.php" method="post" enctype="multipart/form-data"> <!-- 해당 서버에 정보를 전달 method post 방식 = data를 숨겨서 전송 , get 방식 = url을 통해 정보를 전송(data노출됨) --> 
+        <p><label for="id_txt">아이디: </label> <input id="id_txt" type="text" name="id"></p> <!-- name 속성은 같은 속성의 문자를 보냈을떄 name 속성을 통해 구별한다. -->
+        <p><label for="pwd_txt">비밀번호: </label><input id="pwd_txt" type="password" name="pwd" ></p>
+        <p><label for="ads_txt">주소: </label> <!-- label 태그는 특정 기능을 하는 모임을 묶는? 이름표 같은 존재 for 속성을 추가하여 텍스트 클릭시 박스가 반응하여 커서가 위치하게됨. -->
+            <textarea id="ads_txt"cols="30" rows="1"></textarea> <!-- 텍스트 입력 박스 -->
+        </p>
+        <input type="submit">
+        <input type="button" value="안녕" onclick="alert('hello world!')"> <!-- 버튼 타입 -->
+        <input type="hidden" value="hide-boy" name="hide"> <!-- UI는 없지만 해당 서버로 value 정보를 넘겨주어야 할때 사용. -->
+        <input type="file" name="profile">
+        <input type="radio">
+        <input type="submit">
+    </form>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>로그인 Example</title>
+    <link rel="stylesheet" href="login_css.css">
+</head>
+<body style="text-align: center;">
+    
+    <div style="text-align: center;" ><a href="https://naver.com"><span class="MainLogo">Do you like Chicken?</span></a></div>
+    <div style="text-align: center;">
+        <img class="login_image" src="https://media.vlpt.us/images/gparkkii/post/569c3274-b227-435d-b1b9-0784c2828af6/blog-wp-login.png" alt="login_image"  >
+    </div>
+    <form action="/example.php" method="post">
+        <table class="login" >
+            <tr>
+                <td class="ID"><label for="id_input">ID: </label></td>
+                <td><input id="id_input"type="text" placeholder="ID !" name="ID"></td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <td class="password"><label for="pwd_input">PASSWORD:</label></td>
+                <td><input id="pwd_input" type="password" placeholder="PASSWORD !" name="password"></td>
+            </tr>
+            <tr><td><br></td></tr>
+            <tr>
+                <div><td class="check_box"><input id="id_keep" type="checkbox" ><label for="id_keep">Keep Login</label></td></div>
+                <div><td class="ip_secured" style="text-align: right;"><input type="checkbox" id="ip_sec"><label for="ip_sec">IP secured</label></td></div>
+            </tr>
+        </table>
+    </form>
+        <br><br><br>
+    <button class="login_button" onclick="alert('test')" style="font-size: 30px; text-align: center; " >LOGIN</button>
+    <div id="login_menu" style="display: block; margin: auto;">
+        <br>
+        <table>
+            <tr>
+                <td class="login_select"><a href="" target="_blank" style="text-decoration: none;">Where is my ID?&nbsp;</a></td>
+                <td class="text_wall">|&nbsp;</td>
+                <td class="login_select"><a href="" target="_blank" style="text-decoration: none;">Password?&nbsp;</a></td>
+                <td class="text_wall">|&nbsp;</td>
+                <td class="login_select"><a href="" target="_blank" style="text-decoration: none;">Registeration&nbsp;</a></td>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html> <!-- DocType = html 표준 지정 -->
+<html lang="ko">
+<head><!-- 웹 브라우저의 정보를 담고 있음. -->
+    <meta charset='UTF-8'> <!-- 한글 지원 -->
+    <title>Basic-HTML</title> <!-- 웹 페이지 제목 -->
+    <link rel="stylesheet" href="rock_style.css">
+</head>
+
+<!-- 꺾쇠 안에 태그가 달리고, 태그에는 기능을 부여하는 여러가지 속성과 속성에 대한 값이 따옴표안에 지정된다.-->
+<!-- ex) <a(태그) href(속성)="https://naver.com"(속성값) -> 네이버로 연결되는 하이퍼링크 --> 
+
+<body style="background-color: white;"> <!-- body는 웹 브라우저의 본문(실질적정보) -->
+    <h2><a href="rock_index.html">뒤로 가기</a></h2>
+    <ul class="RJ"> <!-- 순서가 존재하지 않는 리스트 태그 <ol>은 순서O, <ul>은 순서X <li>로 리스트 요소 삽입-->
+        <a href="https://namu.wiki/w/%ED%95%98%EB%93%9C%20%EB%A1%9D" target="_blank">하드락</a>
+            <ul>
+                <li>
+                    <h2>AC/DC</h2>
+                    <center><img src="https://thumbs.dreamstime.com/b/ac-dc-logo-white-background-red-letter-vector-format-aviable-ai-lighting-bolt-129084179.jpg" alt="acdc-logo" height="300px"></center>
+                    <table border="2px" style="border: red; border-style: solid; border-collapse: collapse;"  > <!-- 테이블을 생성하는 태그 border는 테두리를 생성하는 속성-->
+                        <caption style="text-decoration: red; font-weight:  bold;"><활동당시 사진></caption>
+                        <th style="text-align: center;">현재</th><th style="text-align: center;">70~80년대</th><th style="text-align: center;">액슬 로즈 재적시기</th>
+                        <tr> <!-- tr은 table row(행)       td는 table data--> 
+                            <!-- alt 속성은 이미지가 안뜰때 대체 텍스트, width height 둘중 하나를 변경할경우 나머지 하나는 자동으로 이미지가 왜곡되지않도록 조정됨.-->
+                            <td><img src="ACDC.jpg" alt="현재의 AC/DC 모습" width="580px" title="현재의 AC/DC 모습" ></td>
+                            <td><img src="ACDC과거.jpg" alt="본 스콧 재적시기" width="580px" title="70~80년대 모습"></td>
+                            <td><img src="https://w.namu.la/s/d23f7ddb7d3fb192e6e338ed28c6901fd7864ca04c0f2dd68089262c5df22857a2cab78e749d8d084cf93efd19a547391b79e07155ec401c2a2fda4ca8c965002fb9dc1d4d6f1c85c50722230c01d5c1"
+                             alt="액슬 로즈 재적시기" width="580px"  title="액슬 로즈 재적 시기"></td>
+                        </tr>
+                    </table>
+                    <table class=acdc-info border="2px" style="border: red; margin-left: auto; margin-right: auto; text-align: center; border-style: solid;" width="500px">
+                        <tr><th>국적</th><td>오스트레일리아</td></tr>
+                        <tr><th rowspan="2">결성</th><td>1973년 11월</td></tr>
+                        <tr><td>오스트레일리아 시드니</td></tr>
+                        <tr><th rowspan="2">데뷔</th><td>1975년 2월 17일<br><small>(호주 데뷔일로부터 +17140일째)</small></td></tr>
+                        <tr><td>1976 4월 30일<br><small>(미국 데뷔일로부터 +16702일째)</small></td></tr>
+                        <tr><th>데뷔 앨범</th><td style="font-weight: bold; color: peachpuff;"><b style="background-color: orange;">High voltage</b></td></tr>
+                        <tr><th rowspan="5">멤버</th><td>앵거스 영<small>(리드기타)</small></td></tr>
+                        <tr><td>스티비 영<small>&nbsp(리듬기타)</small></td></tr>
+                        <tr><td>필 러드<small>&nbsp(드럼)</small></td></tr>
+                        <tr><td>브라이언 존슨<small>&nbsp(보컬)</small></td></tr>
+                        <tr><td>클리프 윌리엄스<small>&nbsp(베이스)</small></td></tr>
+                        <tr><th rowspan="4">전 멤버</th><td>말콤 영<small>&nbsp(리듬기타)</small></td></tr>
+                        <tr><td>본 스콧<small>&nbsp(보컬)</small></td></tr>
+                        <tr><td>액슬 로즈<small>&nbsp(보컬)</small></td></tr>
+                        <tr><td>크리스 슬레이드<small>&nbsp(드럼)</small></td></tr>
+                        <tr><th>장르</th><td>록,&nbsp하드 록,&nbsp블루스 록&nbsp,로큰 롤</td></tr>
+
+                    </table>
+                    <div class="acdc" style="color:rgb(0, 0, 0); font-weight: bold;" >
+                        <h2> 소개 </h2>
+                        <p>
+                            국내에서는 인지도가 낮지만, 세계적으로는 록 음악과 하드 록을 대표하는 밴드이다.
+                            1973년 호주에서 말콤 영, 앵거스 영 형제를 중심으로 결성된 5인조 하드 록 밴드.
+                            이들의 음악은 블루스 기반의 로큰롤에 뿌리를 두고 있다고 볼 수 있으며, AC/DC 하면 떠오르는 수식어 중 하나가 8비트 로큰롤이기도 하다.<br><br>
+                        
+                            공식적으로 2억 장 이상의 음반을 판매하여 역대 록밴드 음반 판매량 5위를 기록한[8] 록 음악계의 거물로, 
+                            특히 록 음악의 불모지와 같았던 호주 출신의 밴드라는 것을 감안하면 대단한 기록이다. 
+                            호주에서 비 지스와 함께 가장 인기있는 아티스트이며, 특히 아메리카 지역에서 워낙 유명하기에 미국이나 캐나다, 
+                            남아메리카에서는 길 가다가 AC/DC 티셔츠 입은 사람을 심심찮게 볼 수 있다.<br><br>
+                          
+                            록 역사에 상당한 업적을 남긴 밴드이며 1970~1980년대 하드 록과 헤비메탈에서 가장 영향력 있는 아티스트 중 하나로 자주 거론된다.
+                            특히 Back in Black의 경우 하드 록 역사를 통틀어 매우 중요한 앨범이니 하드 록이나 헤비 메탈을 좋아한다면 한 번 쯤 전곡을 들어보는 것을 권한다.<br><br>
+                         
+                            결성 후 지금까지 40년의 세월동안 자신들의 뿌리인 블루지한 로큰롤에서 외도하지 않고 외길만 걸어온 밴드로,
+                            다른 대부분의 밴드들이 짧게는 3~4년, 길어봐야 10~15년 정도만 활동하면서도 계속 장르를 바꾸는데 비하면 그야말로 대단한 장인들이라고 볼 수 있다.
+                            그래서 초창기곡과 최근곡이 한결같이 비슷하게 들리기도 한다. 심지어 AC/DC는 1970년대부터 활동한 밴드임에도 불구하고 젊은 팬들이 굉장히 많은 밴드이다.
+                            그만큼 세대를 아우르는 음악을 소화하는 밴드라는 것을 알 수 있다.<br><br>
+                        </p>
+                    </div>
+                </li>
+                <li>
+                    <h2>레드 제플린</h2>
+                </li>
+                <li>
+                    <h2>건즈 앤 로지스</h2>
+                </li>
+            </ul>
+    </ul>
+</body>
+</html>

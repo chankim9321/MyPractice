@@ -1,0 +1,9 @@
+@charset "utf-8";
+table.acdc-info tr th{
+    background-color: red;
+    color:white
+}
+table.acdc-info td{
+    padding: 5px;
+    font-weight: bolder;
+}
